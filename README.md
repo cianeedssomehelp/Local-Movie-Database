@@ -1,20 +1,56 @@
-# Assignment 08-09
+# Movie App 🎬 — Beautiful, Buzzy, and Built with C++!
 
-## Requirements
-- Create a graphical user interface using the Qt framework for the problem you have been working on for the previous assignments.
+Welcome to Movie App — a polished desktop application with a friendly GUI where movie lovers and admins both feel at home. This project combines a responsive user interface for browsing, rating, and searching movies with a powerful admin interface for managing the catalogue, users, and content.
 
-## Week 11
-- Implement the interface design, without using the Qt Designer. Use layouts to design your interface.
-- The list or table displaying the repository entities in administrator mode should be populated using your input file. 
+Built using C++ (core logic), CMake (build), and HTML (embedded UI pages or assets), Movie App is designed to be extended, themed, and deployed across platforms.
 
-## Week 12 
--	All functionalities must be available through the GUI. You may use Qt Designer, if you want to change the initial design of your GUI.
--	The functionality of the application must be the same (including the one-by-one iteration of objects for the user mode).
+---
 
-## Bonus possibility (0.2p, deadline week 12)
-Create a graphical representation of the data in your application. You have an example below: a bar chart representing the number of songs for each artist. Your representations can be a bar chart, a pie chart or another type of chart. You can even use circles or rectangles or any other geometric shapes to represent the data.
+Table of Contents
+- Features
+- Usage (User & Admin)
+- Configuration
+- Contributing
 
-Hint: You can use QPainter (https://doc.qt.io/qt-6/qpainter.html), QGraphicsScene (https://doc.qt.io/qt-6/qgraphicsscene.html) or a special widget designed for plotting and data visualisation – QCustomPlot (http://www.qcustomplot.com/).
+---
 
-<img width="704" alt="Screenshot 2021-04-17 at 20 24 04" src="https://user-images.githubusercontent.com/25611695/115121335-df0f7e00-9fba-11eb-8839-40cd55da1d69.png">
+Features ✨
+- Two polished interfaces:
+  - User interface: browse, search, view details, rate and favorite movies
+  - Admin interface: add/remove/edit movies, manage users, moderate content
+- Clean C++ core for performance and reliability
+- Cross-platform build system using CMake
+- HTML/CSS assets for flexible, themeable UI components
+- Designed for easy testing and iteration
 
+---
+
+How to use — quick tour 🎟️
+
+User interface (what the movie fan sees)
+- Browse movies by category and popularity
+- Click a movie to view details: synopsis, cast, poster, ratings
+- Rate and favorite movies
+- Search bar with instant suggestions
+
+Admin interface (tools for content managers)
+- Create / edit / delete movie entries (title, synopsis, poster, tags)
+
+---
+
+Troubleshooting
+- Build errors:
+  - Missing GUI libs? Install the framework dev packages (e.g., libqt5-dev) or set CMAKE_PREFIX_PATH.
+  - Compiler warnings? Try building with -DCMAKE_BUILD_TYPE=Debug to see details.
+- Runtime problems:
+  - Assets not found? Check MOVIEAPP_ASSETS or relative paths in config.
+  - Admin pages blank? Ensure your embedded HTML files are packaged/copied into the build output.
+
+---
+
+Contributing 🤝
+We love help! To contribute:
+1. Fork the repo
+2. Create a feature branch: git checkout -b feat/cool-thing
+3. Add code, tests, and docs
+4. Open a Pull Request describing the change
